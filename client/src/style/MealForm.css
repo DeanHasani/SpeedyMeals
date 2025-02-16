@@ -1,0 +1,114 @@
+/* Form container */
+.meal-form-container {
+    max-width: 595px; /* Reduced width for a more compact form */
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Form heading */
+  .meal-form-container h1 {
+    font-size: 2rem;
+    color: #779162;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Back button */
+  .meal-form-container .back-button {
+    display: block;
+    padding: 10px 15px;
+    margin-bottom: 30px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #6c757d; /* Gray color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center;
+  }
+  
+  .meal-form-container .back-button:hover {
+    background-color: #5a6268; /* Darker gray on hover */
+  }
+  
+  /* Form fields */
+  .meal-form-container label {
+    margin-left: 95px;
+    display: block;
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 5px;
+  }
+  
+  .meal-form-container input[type="text"],
+  .meal-form-container input[type="number"],
+  .meal-form-container textarea {
+    margin-left: 95px;
+    width: 100%;
+    max-width: 400px; /* Reduced width for fields */
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+  }
+  
+  .meal-form-container textarea {
+    height: 150px;
+    resize: vertical;
+  }
+  
+  /* Ingredients input fields */
+  .meal-form-container .ingredient-inputs input {
+    margin-bottom: 10px;
+  }
+  
+  /* Error messages */
+  .meal-form-container .error {
+    margin-left: 155px;
+    color: #dc3545;
+    font-size: 0.9rem;
+    margin-top: -10px;
+    margin-bottom: 15px;
+  }
+  
+  /* Submit button */
+  .meal-form-container button[type="submit"] {
+    display: block;
+    margin: 0 auto; 
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #28a745; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .meal-form-container button[type="submit"]:hover {
+    background-color: #218838; 
+  }
+  
+  .meal-form-container button[type="submit"].update-button {
+    background-color: #007bff; 
+  }
+  
+  .meal-form-container button[type="submit"].update-button:hover {
+    background-color: #0056b3; 
+  }
+  
+  @media (max-width: 768px) {
+    .meal-form-container {
+      padding: 15px;
+    }
+  
+    .meal-form-container h1 {
+      font-size: 1.8rem;
+    }
+  }

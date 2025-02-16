@@ -1,0 +1,121 @@
+.meal-list-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+.meal-list-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f6f6f6;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 800px;
+  }
+
+.meal-list-container h1 {
+    color: #779162;
+  }
+
+/* Meal list items */
+.meal-list-container ul li {
+    list-style-type: none;
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .meal-list-container ul li:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Meal item container */
+  .meal-list-container ul li .meal-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px; /* Add gap between elements */
+  }
+  
+  /* Meal name */
+  .meal-list-container ul li .meal-name {
+    font-size: 1.2rem;
+    color: #1f440a;
+    flex: 1; /* Allow the name to take up remaining space */
+    word-break: break-word; /* Break long words to prevent overflow */
+  }
+  
+  /* Preparation time */
+  .meal-list-container ul li .prep-time {
+    font-size: 0.9rem;
+    color: #d70606;
+    white-space: nowrap; /* Prevent preparation time from wrapping */
+    margin: 0 10px; /* Add margin to center it */
+  }
+  
+  /* View button */
+  .meal-list-container ul li .view-button {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+    color: #fff;
+    background-color: #28a745; /* Green color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    white-space: nowrap; /* Prevent button text from wrapping */
+  }
+  
+  .meal-list-container ul li .view-button:hover {
+    background-color: #218838; /* Darker green on hover */
+  }
+  
+  /* Add Meal link */
+  .meal-list-container .add-meal-link {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #28a745;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s ease;
+  }
+  
+  .meal-list-container .add-meal-link:hover {
+    background-color: #218838;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .meal-list-container {
+      padding: 15px;
+    }
+  
+    .meal-list-container h1 {
+      font-size: 2rem;
+    }
+  
+    .meal-list-container ul li .meal-name {
+      font-size: 1rem;
+    }
+  
+    .meal-list-container ul li .prep-time {
+      font-size: 0.8rem;
+    }
+  
+    .meal-list-container ul li .view-button {
+      padding: 6px 12px;
+      font-size: 0.8rem;
+    }
+  }
